@@ -24,7 +24,7 @@ class Marquee(object):
                     print(" " * (-1 * offset) + line[:offset + self.term_size[1]])
                 else:
                     print(line[offset:offset + self.term_size[1]])
-            sleep(1/10)
+            sleep(1/6)
             if offset < self.width:
                 offset = offset + 1
             else:
